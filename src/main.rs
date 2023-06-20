@@ -107,19 +107,19 @@ fn main()
        	if let Some(_) = event.render_args() {
            	window.draw_2d(&event, |_context, graphics, _device|
 				{
-					clear([0.0, 0.0, 0.0, 1.0], graphics);
-					rectangle([0.0, 1.0, 0.0, 1.0], [0.0, 0.0, 800.0, 50.0], _context.transform, graphics);
-					rectangle([0.0, 1.0, 0.0, 1.0], [0.0, 550.0, 800.0, 50.0], _context.transform, graphics);
-					rectangle([0.0, 1.0, 0.0, 1.0], [0.0, 50.0, 50.0, 500.0], _context.transform, graphics);
-					rectangle([0.0, 1.0, 0.0, 1.0], [750.0, 50.0, 50.0, 500.0], _context.transform, graphics);
+					clear([0.2, 0.2, 0.2, 1.0], graphics);
+					rectangle([0.5, 0.5, 0.6, 1.0], [0.0, 0.0, 800.0, 50.0], _context.transform, graphics);
+					rectangle([0.5, 0.5, 0.6, 1.0], [0.0, 550.0, 800.0, 50.0], _context.transform, graphics);
+					rectangle([0.5, 0.5, 0.6, 1.0], [0.0, 50.0, 50.0, 500.0], _context.transform, graphics);
+					rectangle([0.5, 0.5, 0.6, 1.0], [750.0, 50.0, 50.0, 500.0], _context.transform, graphics);
 					rectangle([1.0, 1.0, 1.0, 1.0], [400.0, 100.0, 50.0, 50.0], _context.transform, graphics);
 					if array[0][0] > 0.0
-						{rectangle([1.0, 1.0, 0.0, 1.0], [array[0][0], array[0][1], 50.0, 50.0], _context.transform, graphics);}
+						{rectangle([0.3, 0.3, 0.8, 1.0], [array[0][0], array[0][1], 50.0, 50.0], _context.transform, graphics);}
 					if array[1][0] > 0.0
-						{rectangle([1.0, 1.0, 0.0, 1.0], [array[1][0], array[1][1], 50.0, 50.0], _context.transform, graphics);}
+						{rectangle([0.3, 0.3, 0.8, 1.0], [array[1][0], array[1][1], 50.0, 50.0], _context.transform, graphics);}
 					if array[2][0] > 0.0
-						{rectangle([1.0, 1.0, 0.0, 1.0], [array[2][0], array[2][1], 50.0, 50.0], _context.transform, graphics);}
-					rectangle([1.0, 0.0, 0.0, 1.0], [x, y, 50.0, 50.0], _context.transform, graphics);
+						{rectangle([0.3, 0.3, 0.8, 1.0], [array[2][0], array[2][1], 50.0, 50.0], _context.transform, graphics);}
+					rectangle([0.3, 0.0, 0.0, 1.0], [x, y, 50.0, 50.0], _context.transform, graphics);
        		});
     	}
     }
